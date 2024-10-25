@@ -45,6 +45,9 @@ def chatbot_response(user_input):
 # Streamlit app layout
 st.set_page_config(page_title="سواعد بوت", layout="centered", initial_sidebar_state="collapsed")
 
+# Display the logo image at the top
+st.image('data/logo.jpg', width=200)  # Adjust width as needed
+
 # Custom CSS for RTL styling and improved UI
 st.markdown("""
     <style>
@@ -81,3 +84,4 @@ st.markdown(
         جميع الحقوق محفوظة © 2024 سواعد.
     </div>
     """, unsafe_allow_html=True)
+
