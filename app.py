@@ -46,7 +46,7 @@ def chatbot_response(user_input):
 st.set_page_config(page_title="سواعد بوت", layout="centered", initial_sidebar_state="collapsed")
 
 # Display the logo image at the top
-st.image('data/logo.jpg', width=200)  # Adjust width as needed
+st.image('data/logo.svg', width=200)  # Adjust width as needed
 
 # Custom CSS for RTL styling and improved UI
 st.markdown("""
@@ -61,8 +61,8 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # Main Interface
-st.title('🤖 سواعد بوت')
-st.markdown('<div class="rtl">مرحبا بك في سواعد بوت، نحن هنا لمساعدتك في أي استفسارات حول خدماتنا. 💼</div>', unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: right;'>🤖 سواعد بوت</h1>", unsafe_allow_html=True)
+st.markdown('<div class="rtl"> مرحبا بك في سواعد بوت،اسئلني عن حوكمة الجمعيات الأهلية. 💼</div>', unsafe_allow_html=True)
 
 # Chat Input
 user_input = st.text_area("✍️ كيف يمكنني مساعدتك؟", key="user_input", max_chars=300, help="اكتب استفسارك هنا")
